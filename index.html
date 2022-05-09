@@ -31,6 +31,12 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- responsive -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- popup on click -->
+    <link rel="stylesheet" href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity=
+                  "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
 
 </head>
 <body>
@@ -69,7 +75,7 @@
                             </li>
                         </ul>
                     </nav>
-<!--                    <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>-->
+                    <!--                    <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>-->
                     <div class="mobile-menu"></div>
                     <!-- menu end -->
                 </div>
@@ -149,8 +155,8 @@
             <div class="col-lg-8 offset-lg-2 text-center">
                 <div class="section-title">
                     <h3><span class="orange-text">Our</span> Products</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet
-                        beatae optio.</p>
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet-->
+<!--                        beatae optio.</p>-->
                 </div>
             </div>
         </div>
@@ -273,14 +279,13 @@
         <div class="row">
             <div class="col-lg-6 col-md-12">
                 <div class="abt-bg">
-                    <a href="https://www.youtube.com/watch?v=DBLlFWYcIGQ" class="video-play-btn popup-youtube"><i
-                            class="fas fa-play"></i></a>
+                    <img src="assets/img/home-main.jpg"></img>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="abt-text">
-                    <p class="top-sub">Since Year 1999</p>
-                    <h2>We are <span class="orange-text">Fruitkha</span></h2>
+                    <p class="top-sub">Since Year 2021</p>
+                    <h2>We are <span class="orange-text">ALFA PLUS CONVENIENCE STORE</span></h2>
                     <p>Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel
                         nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed,
                         interdum velit. Nam eu molestie lorem.</p>
@@ -318,113 +323,168 @@
                             <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
                         </p>
                         <p class="excerpt"></p>
-                        <!--							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>-->
+                        <button type="button"
+                                class="btn btn-primary"
+                                data-toggle="modal"
+                                data-target="#exampleModal">
+                            read more
+                        </button>
+<!--                        <a href="#exampleModal" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>-->
                     </div>
                 </div>
             </div>
-        </div>
 
         </div>
+
+    </div>
 </div>
-        <!-- end latest news -->
+<!-- end latest news -->
 
-        <!-- footer -->
-        <div class="footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-box about-widget">
-                            <h2 class="widget-title">About us</h2>
-                            <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium
-                                doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-box get-in-touch">
-                            <h2 class="widget-title">Get in Touch</h2>
-                            <ul>
-                                <li>1307-D 8 Ave,
-                                    Humboldt, SK S0K 2A0,
-                                    Canada
-                                </li>
-                                <li>alfaplushumboldt@gmail.com</li>
-                                <li> +1 (306) 682 - 4554</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-box pages">
-                            <h2 class="widget-title">Pages</h2>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="shop.html">Products</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-box subscribe">
-                            <h2 class="widget-title">Subscribe</h2>
-                            <p>Subscribe to our mailing list to get the latest updates.</p>
-                            <form action="https://formspree.io/f/mjvlppoe" method="POST">
-                                <input type="email" placeholder="Email" name="email">
-                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
+<div class="modal fade"
+     id="exampleModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <!-- Add image inside the body of modal -->
+            <div class="modal-body">
+                <img id="image" src=
+                        "assets/img/latest-news/news.jpg"
+                     alt="Click on button"/>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box about-widget">
+                    <h2 class="widget-title">About us</h2>
+                    <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box get-in-touch">
+                    <h2 class="widget-title">Get in Touch</h2>
+                    <ul>
+                        <li>1307-D 8 Ave,
+                            Humboldt, SK S0K 2A0,
+                            Canada
+                        </li>
+                        <li>alfaplushumboldt@gmail.com</li>
+                        <li> +1 (306) 682 - 4554</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box pages">
+                    <h2 class="widget-title">Pages</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box subscribe">
+                    <h2 class="widget-title">Subscribe</h2>
+                    <p>Subscribe to our mailing list to get the latest updates.</p>
+                    <form action="https://formspree.io/f/mjvlppoe" method="POST">
+                        <input type="email" placeholder="Email" name="email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- end footer -->
+    </div>
+</div>
+<!-- end footer -->
 
-        <!-- copyright -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <p>Copyrights &copy; 2022 - <a href="https://alfaplus.com/">ALFA PLUS CONVENIENCE STORE</a>, All
-                            Rights Reserved.</p>
-                    </div>
-                    <div class="col-lg-6 text-right col-md-12">
-                        <div class="social-icons">
-                            <ul>
-                                <li><a href="https://www.facebook.com/alfa.plus.7505" target="_blank"><i
-                                        class="fab fa-facebook-f"></i></a></li>
-                                <!--							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>-->
-                                <li><a href="https://www.instagram.com/alfaplusconvenience" target="_blank"><i
-                                        class="fab fa-instagram"></i></a></li>
-                                <!--							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>-->
-                                <!--							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>-->
-                            </ul>
-                        </div>
-                    </div>
+<!-- copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <p>Copyrights &copy; 2022 - <a href="https://alfaplus.com/">ALFA PLUS CONVENIENCE STORE</a>, All
+                    Rights Reserved.</p>
+            </div>
+            <div class="col-lg-6 text-right col-md-12">
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/alfa.plus.7505" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                        <!--							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>-->
+                        <li><a href="https://www.instagram.com/alfaplusconvenience" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                        <!--							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>-->
+                        <!--							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>-->
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- end copyright -->
+    </div>
+</div>
+<!-- end copyright -->
 
-        <!-- jquery -->
-        <script src="assets/js/jquery-1.11.3.min.js"></script>
-        <!-- bootstrap -->
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <!-- count down -->
-        <script src="assets/js/jquery.countdown.js"></script>
-        <!-- isotope -->
-        <script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
-        <!-- waypoints -->
-        <script src="assets/js/waypoints.js"></script>
-        <!-- owl carousel -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- magnific popup -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- mean menu -->
-        <script src="assets/js/jquery.meanmenu.min.js"></script>
-        <!-- sticker js -->
-        <script src="assets/js/sticker.js"></script>
-        <!-- main js -->
-        <script src="assets/js/main.js"></script>
+<!-- jquery -->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- count down -->
+<script src="assets/js/jquery.countdown.js"></script>
+<!-- isotope -->
+<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+<!-- waypoints -->
+<script src="assets/js/waypoints.js"></script>
+<!-- owl carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!-- magnific popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- mean menu -->
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<!-- sticker js -->
+<script src="assets/js/sticker.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+
+<!--&lt;!&ndash; PopUp for newsa js &ndash;&gt;-->
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"-->
+<!--        integrity=-->
+<!--                "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"-->
+<!--        crossorigin="anonymous">-->
+<!--</script>-->
+<!--<script src=-->
+<!--                "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"-->
+<!--        integrity=-->
+<!--                "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"-->
+<!--        crossorigin="anonymous">-->
+<!--</script>-->
+<!--<script src=-->
+<!--                "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"-->
+<!--        integrity=-->
+<!--                "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"-->
+<!--        crossorigin="anonymous">-->
+<!--</script>-->
 
 </body>
 </html>
