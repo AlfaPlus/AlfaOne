@@ -31,6 +31,15 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
+	<script>
+		window.onload = function() {
+		if(!window.location.hash) {
+			window.location = window.location + '#loaded';
+			window.location.reload();
+			}
+		}
+	</script>
+
 </head>
 <body>
 	
