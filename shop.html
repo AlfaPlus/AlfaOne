@@ -31,14 +31,7 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
-	<script>
-		window.onload = function() {
-		if(!window.location.hash) {
-			window.location = window.location + '#loaded';
-			window.location.reload();
-			}
-		}
-	</script>
+
 
 </head>
 <body>
@@ -794,6 +787,10 @@ Canada</li>
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+
+	<script>
+			document.getElementById("#product-lists").contentWindow.location.reload(true);
+	</script>
 
 </body>
 </html>
