@@ -643,6 +643,7 @@ ul.sub-menu li:last-child {
 
 .mean-container .mean-nav ul li a {
   padding: 0.5em 5%;
+  text-align: center;
 }
 
 .mean-container .mean-nav ul li li a {
@@ -662,6 +663,7 @@ ul.sub-menu li:last-child {
 
 nav.mean-nav > ul > li:first-child > a {
   border-top: none;
+
 }
 
 .header-icons a {
